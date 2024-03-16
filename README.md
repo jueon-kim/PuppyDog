@@ -6,26 +6,26 @@
 # 회원가입
 <img width="80%" src="https://github.com/jueon-kim/PuppyDog/assets/55221207/b3ff105c-adf1-44c2-829e-94237a159e74"/>
 
-## 프로젝트 소개 
+# 프로젝트 소개 
 * 퍼피독 'https://puppydog.co.kr/#!' 사이트를 클론 코딩 하였습니다
 * JDBC를 활용하여 데이터베이스와의 상호작용을 구현하고, HTML/CSS와 JavaScript를 
 
-## 개발환경 
+# 개발환경 
 ### Backend
  * Java, JSP, Servlet, JDBC
 
-### Front
+## Front
 * HTML/CSS, JQuery, Ajax
 
-### DB 
+## DB 
 * MySQL
 
 ## Library
 * Bootstrap
 
 # 세부내용 
-* 유저: 게시물 
-* 관리자
+* 유저: 회원 가입, 회원 탈퇴,게시글 조회, 정보수정, 장바구니,  
+* 관리자: 게시물 작성, 게시글 삭제, 회원 조회 
 
 ## 문제점 
 
