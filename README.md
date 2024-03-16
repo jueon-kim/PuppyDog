@@ -3,6 +3,8 @@
 # 메인화면
 ![VAP 세미프로젝트 메인화면](https://github.com/jueon-kim/PuppyDog/assets/55221207/e406efc1-e89e-4aac-9405-28974a4cc40c){: width="1280" height="1024"}
 
+<img width="80%" src="https://github.com/jueon-kim/PuppyDog/assets/55221207/e406efc1-e89e-4aac-9405-28974a4cc40c"/>
+
 # 회원가입
 ![VAP_세미프로젝트회원가입](https://github.com/jueon-kim/PuppyDog/assets/55221207/b3ff105c-adf1-44c2-829e-94237a159e74){: width="1280" height="1024"}
 
