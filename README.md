@@ -1,7 +1,8 @@
 # PuppyDog
 ![VAP 세미프로젝트 메인화면](https://github.com/jueon-kim/PuppyDog/assets/55221207/e406efc1-e89e-4aac-9405-28974a4cc40c)
 
-![VAP_세미프로젝트회원가입](https://github.com/jueon-kim/PuppyDog/assets/55221207/a117bf31-b5d0-475b-883d-bca885d9291c)
+
+![VAP_세미프로젝트회원가입](https://github.com/jueon-kim/PuppyDog/assets/55221207/b3ff105c-adf1-44c2-829e-94237a159e74)
 
 
 ## 프로젝트 소개 
