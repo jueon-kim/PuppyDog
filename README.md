@@ -1,5 +1,8 @@
 # PuppyDog
 
+[퍼피독_팀 공백.pdf](https://github.com/jueon-kim/PuppyDog/files/14622708/_.pdf)
+
+
 # 메인화면
 <img width="80%" src="https://github.com/jueon-kim/PuppyDog/assets/55221207/e406efc1-e89e-4aac-9405-28974a4cc40c"/>
 
