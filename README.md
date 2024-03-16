@@ -1,15 +1,26 @@
 # PuppyDog
+![VAP 세미프로젝트 메인화면](https://github.com/jueon-kim/PuppyDog/assets/55221207/e406efc1-e89e-4aac-9405-28974a4cc40c)
+
+![VAP_세미프로젝트회원가입](https://github.com/jueon-kim/PuppyDog/assets/55221207/a117bf31-b5d0-475b-883d-bca885d9291c)
+
 
 ## 프로젝트 소개 
+퍼피독 'https://puppydog.co.kr/#!' 사이트를 클론 코딩 하였습니다 
 
-## 개발환
+## 개발환경 
+Java, servelt Jquery, AjAx, JDBC
 
-## 플로우 차트 
-
-## ERD
-
-## 구현 페이지 
+### DB 
+MySQL
 
 ## 문제점 
+![image](https://github.com/jueon-kim/PuppyDog/assets/55221207/03ada5e2-c80a-4aff-9c8c-d8e32d5f6255)
+폴더 구조의 문제점 정리가 안되어 있음 파일들이 한곳에 몰려 있음 
+
+관리자로 로그인 해을떄 계속 세션이 사라지는 현상 
+
+소통의 문제점 
+
+
 
 ## 후기 
