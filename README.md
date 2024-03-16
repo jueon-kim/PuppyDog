@@ -1,5 +1,6 @@
 # PuppyDog
 
+### PDF자료
 [퍼피독_팀 공백.pdf](https://github.com/jueon-kim/PuppyDog/files/14622708/_.pdf)
 
 
