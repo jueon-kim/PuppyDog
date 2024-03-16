@@ -12,7 +12,8 @@
 
 # 프로젝트 소개 
 * 퍼피독 'https://puppydog.co.kr/#!' 사이트를 클론 코딩 하였습니다
-* JDBC를 활용하여 데이터베이스와의 상호작용을 구현하고, HTML/CSS와 JavaScript를 
+* JDBC를 활용하여 데이터베이스와 연동 하였습니다
+* JavaScript와 HTML/CSS으로 개발 하였습니다 
 
 # 개발환경 
 ## Backend
