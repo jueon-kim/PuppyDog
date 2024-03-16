@@ -15,10 +15,10 @@
 * JDBC를 활용하여 데이터베이스와의 상호작용을 구현하고, HTML/CSS와 JavaScript를 
 
 # 개발환경 
-### Backend
+## Backend
  * Java, JSP, Servlet, JDBC
 
-## Front
+## Frontend
 * HTML/CSS, JQuery, Ajax
 
 ## DB 
@@ -31,7 +31,7 @@
 * 유저: 회원 가입, 회원 탈퇴,게시글 조회, 정보수정, 장바구니,  
 * 관리자: 게시물 작성, 게시글 삭제, 회원 조회 
 
-## 문제점 
+# 문제점 
 
 ### 소통의 문제점
 * 팀원들 간의 소통이 원활하지 않아 프로젝트 진행에 어려움이 있었습니다
