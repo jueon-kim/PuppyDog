@@ -2,14 +2,14 @@ package pet.join;
 /*데이터 전달용 클래스 (DO 혹은 VO로도 혼용되기도 한다)*/
 
 public class joinVO {
-	
+
 	public String user_id;
 	public String user_name;
 	public String user_pw;
 	public String user_phone;
 	public String user_address;
 	public String user_email;
-	
+
 	public String getUser_id() {
 		return user_id;
 	}
@@ -47,8 +47,8 @@ public class joinVO {
 	public void setUser_email(String user_email) {
 		this.user_email = user_email;
 	}
-	
-	// insert into user(user_id, user_name, user_pw, user_phone, user_address, user_email) 
+
+	// insert into user(user_id, user_name, user_pw, user_phone, user_address, user_email)
 	@Override
 	public String toString() {
 	    return "joinDto [user_id=" + user_id + ", user_name=" + user_name + ", user_pw=" + user_pw +

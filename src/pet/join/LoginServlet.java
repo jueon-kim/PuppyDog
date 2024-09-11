@@ -25,13 +25,13 @@ public class LoginServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
+
 	    resp.setCharacterEncoding("utf-8");
 	    PrintWriter out = resp.getWriter();
-	    
+
 	    String user_id = req.getParameter("user_id");
 	    String user_pw = req.getParameter("user_pw");
-	    
+
 	    joinVO vo = new joinVO();
 	    vo.setUser_id(user_id);
 	    vo.setUser_pw(user_pw);
@@ -67,17 +67,17 @@ public class LoginServlet extends HttpServlet {
 		    dispatcher.forward(req, resp);
 		}
 	}
-	
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-	   
+
 	}
-	
+
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 	    resp.setCharacterEncoding("utf-8");
-		
+
 	    HttpSession session = req.getSession();
 	    String user_id = (String) session.getAttribute("user_id");
 

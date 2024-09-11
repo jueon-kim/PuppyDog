@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+"<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <!DOCTYPE html>
@@ -6,176 +6,115 @@
     
 <head>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+     <link rel="stylesheet" href="./css/header.css" type="text/css">
+    
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-	crossorigin="anonymous">
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
   
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <jsp:include page="./module/header_fin.jsp" flush="false"/>
     <title>PuppyDog</title>
-    <style>
-    /* 주목받는 아이템 부분 스타일 */
-    .btn-focus{
-        font-size: 20px;
-        text-decoration: none;
-        margin-right: 30px;
-        color: darkslategray;
-    }
-
-    .btn-focus:hover{
-        text-decoration: underline;
-        color: black;
-    }
-
-    .btn-focus:active{
-        color: black;
-        text-decoration: underline;
-    }
-    
-    </style>
-    <script>
-
-        // 주목받는 아이템 부분
-        function showCategory(category){
-
-        let allCategories = document.querySelectorAll('.product-container');
-        allCategories.forEach(function (item){
-            item.classList.remove('active');
-        });
-
-        let selectedCategory = document.getElementById(category);
-        selectedCategory.classList.add('active');
-        }
-
-    </script>
 
 
 </head>
 
-<body>
-  <div class="menu-banner">
-  </div>
-  <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="10000">
-        <img src="img/메인사진1.png" class="d-block w-100 inner-img" alt="dog1">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>첫번째 슬라이드</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/메인사진2.jpg" class="d-block w-100 inner-img" alt="dog2">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>두번째 슬라이드</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/메인사진3.jpg" class="d-block w-100 inner-img" alt="dog3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>세번째 슬라이드</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+<body width="100vw" height="100vh">
 
-  <div class="container text-center mid-con">
-    <div class="row g-2">
-      <div class="col-4 mid-scroll">
-        <table class="table table-dark table-hover" style="border: 1px solid lightgray;">
-          <thead>
-            <tr>
-              <th scope="col">공지사항</th>
-            </tr>
-          </thead>
-          <tr class="table-dark">
-            <td class="table-light">첫번째 공지사항</td>
-          </tr>
-          <tr class="table-dark">
-            <td class="table-light">두번째 공지사항</td>
-          </tr>
-          <tr class="table-dark">
-            <td class="table-light">세번째 공지사항</td>
-          </tr>
-          <tr class="table-dark">
-            <td class="table-light">네번째 공지사항</td>
-          </tr>
-          <tr class="table-dark">
-            <td class="table-light">다섯째 공지사항</td>
-          </tr>
-        </table>
-      </div>
-      <div class="col-4 mid">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/작은사진1.jpg" class="d-block w-100 mid-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/작은사진2.jpg" class="d-block w-100 mid-img" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+  <div class="bodyWapper">
+  
+  <div class="mainSwiper">
+	   <swiper-container 
+	   		class="mySwiper" 
+	   		pagination="true" 
+	   		pagination-clickable="true" 
+	   		navigation="true" 
+	   		space-between="30"
+	    	centered-slides="true" 
+	    	autoplay-delay="2500" 
+	    	autoplay-disable-on-interaction="false">
+	    	
+	    <swiper-slide>Slide 1</swiper-slide>
+	    <swiper-slide>Slide 2</swiper-slide>
+	    <swiper-slide>Slide 3</swiper-slide>
+	    <swiper-slide>Slide 4</swiper-slide>
+	    <swiper-slide>Slide 5</swiper-slide>
+	    <swiper-slide>Slide 6</swiper-slide>
+	    <swiper-slide>Slide 7</swiper-slide>
+	    <swiper-slide>Slide 8</swiper-slide>
+	    <swiper-slide>Slide 9</swiper-slide>
+	  </swiper-container>
+ 	</div>
+  
+      
+     <div class="noticSection">
+          <div class="noticeInnser">
+          	<div class="noticeText">
+          		<div>
+          				
+          		</div>
+          		
+          		<div>
+	          		<div>
+	          			<p>택배 무료배송</p>
+	          			<p>전제품 ~ 5만원이상 구입시 택배 무료 배송 <p>
+	          		</div>
+	          		
+	          		<div>
+	          			<button>바로가</button>
+	          		</div>
+          		</div>
+          		
+          		
+          		<div>
+	          		<div>
+	          			<p>신상품 3% OFF</p>
+	          			<p>신상품은 3일간 3%할인</p>
+          			</div>
+          			
+          			<div>
+          				<button>더보기</button>
+          			</div>
+          		<div>
+          	</div>
+          	</div>
+          	      </div>
+          
+          
+          <div class="firstSwiper">
+          	<swiper-container class="mySwiper" style="width: 450px; height: 250px;">
+				<swiper-slide>
+					<img src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/4c8a54f28ce8f55921d43011d1743133.jpg">
+		         </swiper-slide>
+					   
+				 <swiper-slide>
+		            <img src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/663e145f2114ffea6db76b6c74103a39.jpg">
+		         </swiper-slide>
+	  			</swiper-container>
+	        </div>
+      
+      <div class="secondSwiper">
+	       <swiper-container class="mySwiper" style="width: 450px; height: 250px;">
+				<swiper-slide>
+	              	<img src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/b7ef1526fbad1b26cc9926a7036e7a00.jpg">
+		         </swiper-slide>
+					   
+				 <swiper-slide><div class="carousel-item">
+	              	<img src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/20b108158704fe670625c134591ac737.jpg">
+		         </swiper-slide>
+	  		</swiper-container>  
         </div>
-      </div>
-      <div class="col-4 mid">
-        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/작은사진3.jpg" class="d-block w-100 mid-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/작은사진4.jpg" class="d-block w-100 mid-img" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-<!--  -->
+		</div>
+    </div> <!-- noticSection  -->
+    
+<!-- 
 <div class="container text-center" style="border: 1px solid beige; margin-bottom: 50px; padding: 10px;">
   <div class="row row-col-2">
       <div class="col-6 menutitle">
@@ -198,7 +137,7 @@
             </ul>
       </div>
   
-      <!-- 상품 (사료) -->
+      상품 (사료)
       <div id="feed" class="product-container active">
           <div class="col-3">
               <div class="card" style="width: 18rem;">
@@ -242,7 +181,7 @@
           </div>
       </div>
 
-      <!-- 상품 (간식) -->
+      상품 (간식)
       <div id="snack" class="product-container">
           <div class="col-3">
               <div class="card" style="width: 18rem;">
@@ -285,7 +224,7 @@
               </div>
           </div>
       </div>
-      <!-- 상품 (의류) -->
+      상품 (의류)
       <div id="cloth" class="product-container">
           <div class="col-3">
               <div class="card" style="width: 18rem;">
@@ -328,7 +267,7 @@
               </div>
           </div>
       </div>
-      <!-- 상품 (미용) -->
+      상품 (미용)
       <div id="beauty" class="product-container">
           <div class="col-3 product-feed">
               <div class="card" style="width: 18rem;">
@@ -370,11 +309,11 @@
                   </div>
               </div>
           </div>
-      </div>
-  </div>
+      </div> -->
+<!--   </div>
 </div>
 
-  <!--  -->
+  
   
   <div class="container">
     <div class="row">
@@ -417,15 +356,15 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-    </div>
-  </div>
+      </div> -->
 
 <!-- 영웅이 파트 (베스트아이템) -->
-<jsp:include page="./module/main2.html" flush="false"/>
-<jsp:include page="./module/footer.html" flush="false"/>
+<%-- <jsp:include page="./module/main2.html" flush="false"/> --%>
+<%-- <jsp:include page="./module/footer.html" flush="false"/> --%>
 
-
+   
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
 
 </body>
 </html>

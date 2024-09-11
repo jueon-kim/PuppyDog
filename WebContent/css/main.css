@@ -1,0 +1,26 @@
+.bodyWapper{
+	width: 1920px;
+	display: grid;
+}
+
+
+.mainSwiper{
+	grid-row: 2;
+	width: 90vw;
+    height: 520px;
+}
+
+.noticSection{
+	width: 100vw;
+	grid-row: 3;
+
+}
+
+.noticeInnser{
+	display: flex;
+	justify-content: center;
+}
+
+.noticeText{
+	width: 200px;
+}

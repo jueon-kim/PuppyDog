@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+
+/* 헤더 전체를 감싸고 있는 크기 */
+.headerwapper{
+	height: 300px;
+}
+
+/* 헤더 전체를 grid으로 잡음  */
+.headerwapper, firstHeader, secondHeader,  thirdHeader{
+    display: grid;
+    grid-template-rows: auto auto auto; /* 각 행에 대해 자동 높이 적용 */
+  	grid-gap: 10px; /* 행 간 간격 */
+}
+
+/* 행과 크기 100vw으로 설정  */
+.firstHeader {
+	width:100vw;
+  	grid-row: 1; /* 첫 번째 행 */
+}
+
+.secondHeader {
+	  width:100vw;
+	  grid-row: 2; /* 두 번째 행 */
+}
+
+.thirdHeader {
+  	width:100vw;
+  	grid-row: 3; /* 세 번째 행 */
+}
+
+
+
+.firstHeader {
+    display: grid;
+    justify-content: space-around;
+ 
+}
+
+.serviceCenter{
+	    display: flex;
+	
+}
+.secondHeader{
+    display: grid;
+	justify-content: space-around;
+
+}
+
+.firstHeader-RightSectino{
+    grid-column: 3;
+    display: flex;
+    gap: 10px;
+
+}
+
+.secondHeaderWapper{
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* 스와이 */
+.secondHeader > swiper-container{
+	width: 240px;
+	height: 120px;
+}
+
+.secondHeaderCenter{
+	grid-row: 1;
+    grid-column: 2;
+}
+
+.secondHeaderUserIcon{
+    display: flex;
+    align-items: center;
+
+    grid-row: 1;
+    grid-column: 3;
+
+    gap: 10px;
+}
+
+.thirdHeader {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+        align-items: center;
+}
+
+
+
+/* 기본 드롭다운 설정 */
+/* 기본적으로 dropdown-content는 숨김 */
+.dropdown-content {
+  display: none;
+  position: absolute; /* 드롭다운을 부모 요소 기준으로 위치 */
+  background-color: #f9f9f9; /* 배경색 */
+  min-width: 160px; /* 최소 너비 설정 */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  z-index: 1; /* 다른 요소보다 위에 표시되도록 설정 */
+}
+
+/* dropdown 요소가 hover 상태일 때 dropdown-content 보이기 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 드롭다운 안의 링크 스타일 */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* 링크에 hover 시 배경색 변경 */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownInner{
+	display: flex;
+}
+
+.dropDownLeft{
+	text-align: center;
+}
+
+
