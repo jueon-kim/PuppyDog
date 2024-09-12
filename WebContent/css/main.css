@@ -1,26 +1,52 @@
-.bodyWapper{
-	width: 1920px;
-	display: grid;
+
+.mainWapper{
+	    padding: 0px 75px;
 }
 
-
 .mainSwiper{
+	position: sticky; /* 상단 hover 메뉴 보이기 위한 설정*/
+	
 	grid-row: 2;
-	width: 90vw;
-    height: 520px;
+	padding: 120px 0px 120px; /* 위 아래 요소들이랑 겹치지 않게 설정s*/
+
+	width: 100vw;
+    height: 670px;
 }
 
 .noticSection{
-	width: 100vw;
 	grid-row: 3;
 
 }
 
 .noticeInnser{
-	display: flex;
-	justify-content: center;
+	display: flex; /* 메인에 들어가는 하위 요소를 flex으로 정*/
+    justify-content: space-between;
 }
 
 .noticeText{
 	width: 200px;
+}
+
+.mainItem{
+	display: flex;
+}
+
+.mainCategory{
+	display:flex;
+}
+
+.subCategory{
+    display: flex;
+    justify-content: flex-end;
+}	
+
+.cateGory{
+    flex-grow: 1;
+    gap: 15px;
+}
+
+
+
+.onclickInner{
+	display: flex;
 }

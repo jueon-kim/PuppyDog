@@ -16,17 +16,15 @@
 
 /* 행과 크기 100vw으로 설정  */
 .firstHeader {
-	width:100vw;
   	grid-row: 1; /* 첫 번째 행 */
 }
 
 .secondHeader {
-	  width:100vw;
 	  grid-row: 2; /* 두 번째 행 */
 }
 
 .thirdHeader {
-  	width:100vw;
+	position: relative; /* 호버시 메뉴 보이게 하기 위한 설*/
   	grid-row: 3; /* 세 번째 행 */
 }
 
