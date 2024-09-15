@@ -122,10 +122,12 @@
 	       </div>
 		      
 		   <div class="subCategory cateGory">
-		        <button id="pageFeed">사료</button>
 		        <button id="pageSnack">간식</button>
-		        <button id="pageDress">의류</button>
-		        <button id="pageCut">미용</button>
+		        <button id="pageFeed">사료</button>
+		        <button id="pageDress">패션</button>
+		        <button id="pageSalon">미용용품</button>
+		        <button id="pageClean">위생용품</button>
+		        <button id="pageWater">식기/급수기</button>
 	      </div> 
 	      
 	
@@ -134,10 +136,75 @@
 	   
 	   <div class="onclickCategory">
 	   	<div class="onclickInner">
-	   	
-	   	<div id="categoryFeed">
+	   	<!-- 간식 -->
+	   		<div id="categorySnack" class="section categroyOption">
 	   		<div>
-	   			<img alt="" src="">
+	   			<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/be0804f926e8d0190cf7e060204e4ad2.jpg">
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/415b30404c51841846da126e42e84d51.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/0e4807af0faa95ce186bb74d2c2bd030.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/3e2d2da1376a7ee38642ad36d999fa7f.jpg">
+	   			<p></p>
+	   		</div>
+	   	</div>
+	   	
+	   	
+	   	<!-- 사료  -->
+	   	<div id="categoryFeed" class="section categroyOption">
+	   		<div>
+	   			<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/f00b3823937bf64ae65dd5cc858d6ce9.jpg">
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202407/2231df18bb37125cd788004d5e1d46a2.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//m.puppydog.co.kr/web/product/medium/202407/014c4ffc1f2957f40092a14928c8435d.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//m.puppydog.co.kr/web/product/medium/202406/0ef5a564ccb38d1148263b9c08531605.jpg">
+	   			<p></p>
+	   		</div>
+	   	</div>
+	   	<!-- 패션용품 -->
+	   	 <div id="categoryDress" class="section categroyOption">
+	   		<div>
+	   			<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/18e4cecb739c7b7f4cfcfe7ce6f28611.jpg">
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/5bca3baf20148edb0363405deb033290.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/5fd18a46c1603c269062c235dab8894e.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/008e1a64bd49987c3b14f389719785eb.jpg">
+	   			<p></p>
+	   		</div>
+	   	</div>
+	   	
+	   	<div id="categorySalon" class="section categroyOption">
+	   		<div>
+	   			<img alt="" src="">미용 페이지
 	   		</div>
 	   		
 	   		<div>
@@ -156,10 +223,9 @@
 	   		</div>
 	   	</div>
 	   	
-	   	
-	   	<div id="categoryFeed">
+	   	<div id="categoryClean" class="section categroyClean">
 	   		<div>
-	   			<img alt="" src="">
+	   			<img alt="" src="">위생 페이지
 	   		</div>
 	   		
 	   		<div>
@@ -177,236 +243,155 @@
 	   			<p></p>
 	   		</div>
 	   	</div>
+	   	
+	   	<!-- 식기/급수기 -->
+	   	<div id="categoryWater" class="section categroyWater">
+	   		<div>
+	   			<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/a181cb8463373ee6c90722711e97de23.jpg">
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/64d4096d420d9c33b8a994fa33c67cd0.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/787020d5ed648661c2981a1f9f1070ee.jpg">
+	   			<p></p>
+	   		</div>
+	   		
+	   		<div>
+	   			<img alt="" src="//puppydog.co.kr/web/product/medium/202305/5fd8410e2a871b8204f41fe9cf6a053b.jpg">
+	   			<p></p>
+	   		</div>
+	   	</div>
 	   	</div>
 	   	
-	   </div>
+	   </div><!-- 주목받는 아이템 끝  -->
+	</div>
 	   
-	   
-	   
-   </div>
+	<div class="secodnSwiper" style="display: flex;">
+
+		<swiper-container class="mySwiper" style="width: 50vw;">
+			<swiper-slide>
+				<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/3d8b061f7fc36c97ceecad86b72a698b.jpg">
+			 </swiper-slide>
+						   
+			<swiper-slide>
+			    <img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/c8cdb5564306fb000dbfd4e053e77d97.jpg">
+			</swiper-slide>
+		</swiper-container>
+		
+		
+		
+		<swiper-container class="mySwiper" style="width: 50vw;">
+			<swiper-slide>
+				<img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/08e1e6bb386c703b58260d1eceb51e88.jpg">
+			 </swiper-slide>
+						   
+			<swiper-slide>
+			    <img alt="" src="https://puppydog.co.kr/web/upload/appfiles/0zdpAngaKBFnlCcCqpCU4A/abd3d32ac5d94e1a9aad50e06888c48e.jpg">
+			</swiper-slide>
+		  	
+		  	</swiper-container>
+		  </div>
+	
+	
+	<div class="bestItem">
+		<div class="bestItemTitle" style="padding: 75px;text-align: center;">
+			<p>BEST ITEM</p>
+			<p>Anniversary Sale early</p>
+		</div>
+			
+			
+		<div class="itemWapper"> <!-- besttItem grid 적용 -->
+ 			<div>
+ 				<img alt="" src="">
+ 				<div>
+ 					<p>text</p>
+ 					<p>가격</p>
+ 				</div>
+ 			</div>
+ 			
+ 			<div>
+ 			<div>
+ 					<p>text</p>
+ 					<p>가격</p>
+ 				</div>
+ 			</div>
+ 			
+ 			<div>
+ 			<div>
+ 					<p>text</p>
+ 					<p>가격</p>
+ 				</div>
+ 			</div>
+ 			
+ 			<div>
+ 			<div>
+ 					<p>text</p>
+ 					<p>가격</p>
+ 				</div>
+ 			</div>
+		</div>
+	</div>
+
+   </div> 	   
    
-  
-<!--       상품 (사료)
-      <div id="feed" class="product-container active">
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목사료1.jpg" class="card-img-top" alt="...">
-                  <h5 class="card-title">강아지 처방 사료 민감피푸 질환 개선 NVD(애견용)2.5kg</h5>
-                  <hr>
-                  <div class="card-body">
-                  <p class="card-text">86,300원</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목사료2.jpg" class="card-img-top" alt="...">
-                  <h5 class="card-title">올가밀 홀리스틱 램29(2.7kg)</h5>
-                  <hr><br>
-                  <div class="card-body">
-                  <p class="card-text">65,000원</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목사료1.jpg" class="card-img-top" alt="...">
-                  <h5 class="card-title">강아지 처방 사료 민감피푸 질환 개선 NVD(애견용)2.5kg</h5>
-                  <hr>
-                  <div class="card-body">
-                  <p class="card-text">86,300원</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목사료2.jpg"" class="card-img-top" alt="...">
-                  <h5 class="card-title">올가밀 홀리스틱 램29(2.7kg)</h5>
-                  <hr><br>
-                  <div class="card-body">
-                  <p class="card-text">65,000원</p>
-                  </div>
-              </div>
-          </div>
-      </div>
+   
+   
+   <script type="text/javascript">
+   		//버튼의 id값을가지고 와서 클릭 이벤트를 적용
+   		document.getElementById("pageSnack").addEventListener("click", function(){
+   			toggleSection('categorySnack');
+   		});
+   		
+   		document.getElementById("pageFeed").addEventListener("click", function() {
+   			toggleSection('categoryFeed');
+			
+		});
+   		
+   		document.getElementById("pageDress").addEventListener("click", function() {
+   			toggleSection('categoryDress');
+   		});
+   		
+   		
+   		document.getElementById("pageSalon").addEventListener("click", function() {
+			toggleSection('categorySalon');
+		});
+   		
+   		document.getElementById("pageClean").addEventListener("click", function () {
+   			toggleSection('categoryClean');
+			
+		});
+   		
+   		document.getElementById("pageWater").addEventListener("click", function () {
+   			toggleSection('categoryWater')
+			
+		})
+   		
+   		
+   	 function toggleSection(sectionId) {
+   	    // 모든 섹션을 숨김 버튼의 ID값을 가지고
+   	    document.getElementById("categorySnack").style.display = "none";
+   	    document.getElementById("categoryFeed").style.display = "none";
+   	    document.getElementById("categoryDress").style.display = "none";
+   	    document.getElementById("categorySalon").style.display = "none";
+   	    document.getElementById("categoryClean").style.display = "none";
+   	    document.getElementById("categoryWater").style.display = "none";
 
-      상품 (간식)
-      <div id="snack" class="product-container">
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목간식1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목간식1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목간식1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목간식1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      상품 (의류)
-      <div id="cloth" class="product-container">
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목패션1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목패션2.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목패션3.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목패션1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-      상품 (미용)
-      <div id="beauty" class="product-container">
-          <div class="col-3 product-feed">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목미용1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목미용2.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목미용3.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-3">
-              <div class="card" style="width: 18rem;">
-                  <img src="./img/주목미용1.jpg" class="card-img-top" alt="...">
-                  <hr>
-                  <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-              </div>
-          </div>
-      </div>  -->
-<!--   </div>
-</div>
+   	    // 선택된 섹션만 보이도록 설정
+   	    document.getElementById(sectionId).style.display = "flex";
+   	  }
+   
+   	 //기본 페이지를 Snack 으로 설
+   	 window.onload = function () {
+		toggleSection('categorySnack')
+	};
+   	 
 
+   </script>
   
-  
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner in-midimg">
-            <div class="carousel-item active">
-              <img src="img/중간사진1.jpg" class="d-block w-100 under-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/중간사진2.jpg" class="d-block w-100 under-img" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner in-midimg">
-          
-            <div class="carousel-item active">
-              <img src="img/중간사진3.jpg" class="d-block w-100 under-img" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/중간사진4.jpg" class="d-block w-100 under-img" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div> -->
 
 <!-- 영웅이 파트 (베스트아이템) -->
 <%-- <jsp:include page="./module/main2.html" flush="false"/> --%>
