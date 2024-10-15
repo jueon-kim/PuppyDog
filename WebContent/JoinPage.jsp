@@ -4,56 +4,18 @@
 <html>
 <head>
 
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/swiper.min.css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css"> 
- 	
+ 	<link rel="stylesheet" href="./css/header.css" type="text/css"> 	
  	<link rel="stylesheet" href="./css/JoinPage.css">
     
-    <script type="text/javascript" src="./js/jquery-3.7.1.min.js"></script>
     
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/header.css" type="text/css"> 	
+     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>회원가입</title>
 <style type="text/css">
 
 </style>
-
-<script type="text/javascript">
-	
-	
-	$(document).ready(function () {
-		
-		/* 비밀번호 일치 검사 */
-		let pw = $('.join-container .join-table tr:nth-child(3) input');
-		let pw_confirm = $('.join-table tr:nth-child(4) input');
-		
-		pw_confirm.on('input', function () {
-			if(pw.val() !== "" && pw_confirm.val() !== "" && pw.val() !== pw_confirm.val()) {
-				$('.join-container .join-table tr:nth-child(4) td:last-child').addClass('dismatch_pw');
-			} else {
-				$('.join-container .join-table tr:nth-child(4) td:last-child').removeClass('dismatch_pw');
-			}
-		});
-		
-		let email = $('.join-container .join-table tr:nth-child(7) td:last-child input');
-			
-		email.on('input',function () {
-			if(email.val() === "") {
-				return;
-			} else if (email.val() !== "" && email.val().indexOf('@') == -1) {
-				$('.join-container .join-table tr:nth-child(7) td:last-child').addClass('wrong_email');
-			} else if(email.val() !== "" && email.val().indexOf('@') !== -1) {
-				$('.join-container .join-table tr:nth-child(7) td:last-child').removeClass();
-			}
-		});
-		
-	});
-	
-
-
-</script> 
 
 </head>
 <body>
@@ -137,5 +99,8 @@
 
 
 <jsp:include page="/module/footer.html"/>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 </html>

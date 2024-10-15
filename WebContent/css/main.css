@@ -1,43 +1,100 @@
+.bodyWapper{
+	width: 1020px;
+    display: block;
+    padding: 20px;
+    margin: 0 auto;
 
-.mainWapper{
-	    padding: 0px 75px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+	
 }
 
 .mainSwiper{
 	position: sticky; /* 상단 hover 메뉴 보이기 위한 설정*/
-	
-	grid-row: 2;
-	padding: 120px 0px 120px; /* 위 아래 요소들이랑 겹치지 않게 설정s*/
-
-	width: 100vw;
-    height: 670px;
-}
-
-.noticSection{
-	grid-row: 3;
-
-}
-
-.noticeInnser{
-	display: flex; /* 메인에 들어가는 하위 요소를 flex으로 정*/
+    height: 520px;
+    
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.noticeText{
-	width: 200px;
+
+ .firstSwiper, .secondSwiper {
+    flex: 1; /* 각 요소가 동일한 비율로 공간을 차지 */
+    display: flex;
+    justify-content: center; /* 내부 요소들을 가운데 정렬 */
+    align-items: center; /* 세로축에서 가운데 정렬 */
+   
 }
 
+.mainEvent{
+	display: grid;
+/*     grid-template-rows: repeat(1, 1fr 1fr); */
+    grid-template-columns: repeat(1, 1fr 1fr);
+ 	padding: 75px 0px 75px;
+    width: 100%;
+    height: 520px;
+}
+
+
+.innerMainEvent {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image1MainEvent,
+.bg-image2MainEvent,
+.bg-image3MainEvent,
+.bg-image4MainEvent {
+    display: block;
+    width: 300px;  /* 이미지 크기 설정 */
+    height: 200px;
+    background-size: cover; /* 이미지가 요소에 맞게 확장/축소됨 */
+    background-repeat: no-repeat; /* 이미지가 반복되지 않음 */
+    background-position: center; /* 이미지가 중앙에 위치 */
+}
+
+.bg-image1MainEvent {
+    background-image: url('../img/mainEvent-1.jpg');
+}
+
+.bg-image2MainEvent {
+    background-image: url('../img/mainEvent-2.jpg');
+}
+
+.bg-image3MainEvent {
+    background-image: url('../img/mainEvent-3.jpg');
+}
+
+.bg-image4MainEvent {
+    background-image: url('../img/mainEvent-4.jpg');
+}
+
+.mainCategoryWapper{
+	width:100%;
+}
 .mainItem{
 	display: flex;
 }
 
 .mainCategory{
+	width: 100%;
 	display:flex;
 }
-
+.mainCategory > p,
+.bestItemTitle > p {
+	font-size: 24px;
+}
 .subCategory{
     display: flex;
     justify-content: flex-end;
+
 }	
 
 .cateGory{
@@ -45,12 +102,69 @@
     gap: 15px;
 }
 
-
-
-.onclickInner{
-	display: flex;
+.cateGory button{
+	border: 0;
+    outline: 0;
+    background: 0;	
 }
 
+
+.onclickInner {
+    display: flex;
+    justify-content: space-between; /* 아이템 간에 동일한 간격을 유지 */
+    gap: 10px; /* 이미지들 사이의 간격 (선택 사항, 원하는 대로 조절 가능) */
+    flex-wrap: wrap; /* 필요한 경우 다음 줄로 넘어가도록 설정 */
+    padding: 75px 0px 75px;
+}
+
+.onclickInner div {
+    flex: 1 1 calc(33.33% - 10px); /* 각 div가 전체 너비의 1/3을 차지하게 설정, 간격을 빼고 계산 */
+    box-sizing: border-box; /* padding과 border가 전체 너비에 포함되도록 설정 */
+}
+
+.onclickInner img {
+    width: 100%;
+    height: auto; /* 이미지의 가로세로 비율을 유지하면서 너비를 100%로 설정 */
+}
+
+.noticSection{
+	padding: 75px 0px 75px;
+}
+
+
+.noticSection {
+    display: flex;
+    justify-content: space-between; /* 자식 요소들을 양쪽으로 배치 */
+    align-items: center; /* 세로축에서 가운데 정렬 */
+    gap: 20px; /* 아이템 간의 간격 */
+    width: 100%;
+    max-width: 1200px; /* 최대 너비 설정 (원하는 크기로 조절 가능) */
+}
+
+.noticeInnser {
+    flex: 1;
+}
+
+.firstSwiper, .secondSwiper {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Swiper를 가운데 정렬 */
+}
+
+.mySwiper1, .mySwiper2 {
+    width: 100%; /* 부모 요소의 너비에 맞게 조정 */
+    height: 250px; /* 고정 높이 */
+}
+
+.noticeInnser div {
+    margin-bottom: 20px;
+}
+
+.noticeInnser button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
 
 /* 주목 받는 아이템 */
  .section {
@@ -73,8 +187,9 @@
 .itemWapper {
    display: grid;
    grid-template-columns: repeat(4, 1fr); /* 2열로 설정, 필요에 따라 3, 4열 등으로 변경 */
-   grid-template-rows: repeat(5, 1fr); /* 4행 */
+   grid-template-rows: repeat(2, 1fr); /* 4행 */
    gap: 20px; /* 그리드 항목 사이 간격 */
+   padding: 75px 0px 75px;
    }
 
  /* 그리드 항목 내의 이미지 크기 조정 */
@@ -90,9 +205,20 @@
 }
 
 
+/*BestItem Bottom */
+.bestItemInner{
+	display: flex;
+    width: 100%;
+}
 
 
+/*2행 2열로 정*/
+.bestItemRightSection{
+	width:50%;
+	
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 2fr 2fr;
 
-
-
+}
 
