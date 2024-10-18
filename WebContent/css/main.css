@@ -1,3 +1,5 @@
+
+
 .bodyWapper{
 	width: 1020px;
     display: block;
@@ -8,7 +10,6 @@
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
     justify-content: center;
 	
 }
@@ -38,10 +39,13 @@
  	padding: 75px 0px 75px;
     width: 100%;
     height: 520px;
+        gap:24px;
 }
 
 
 .innerMainEvent {
+	    position: relative; /* overlay를 이미지 위에 겹치게 하기 위해 설정 */
+	
     display: flex;
     gap: 20px;
     align-items: center;
@@ -53,11 +57,12 @@
 .bg-image3MainEvent,
 .bg-image4MainEvent {
     display: block;
-    width: 300px;  /* 이미지 크기 설정 */
+    width: 100%;  /* 이미지 크기 설정 */
     height: 200px;
     background-size: cover; /* 이미지가 요소에 맞게 확장/축소됨 */
     background-repeat: no-repeat; /* 이미지가 반복되지 않음 */
     background-position: center; /* 이미지가 중앙에 위치 */
+
 }
 
 .bg-image1MainEvent {
@@ -74,6 +79,36 @@
 
 .bg-image4MainEvent {
     background-image: url('../img/mainEvent-4.jpg');
+}
+
+.overlay{
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	height:100%;
+	width:100%;
+    opacity: 0; /* 기본 상태에서는 보이지 않음 */
+    transition: opacity 0.5s ease; /* hover 시 부드러운 트랜지션 */
+    background-color: rgba(0, 0, 0, 0.5); /* 약간 투명한 배경색 */
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.bg-image1MainEvent:hover .overlay,
+.bg-image2MainEvent:hover .overlay,
+.bg-image3MainEvent:hover .overlay,
+.bg-image4MainEvent:hover .overlay {
+    opacity: 1; /* hover 시 오버레이가 보임 */
+}
+.hoverEvent:hoever .overlay{
+	opacity:1;
 }
 
 .mainCategoryWapper{
@@ -120,6 +155,7 @@
 .onclickInner div {
     flex: 1 1 calc(33.33% - 10px); /* 각 div가 전체 너비의 1/3을 차지하게 설정, 간격을 빼고 계산 */
     box-sizing: border-box; /* padding과 border가 전체 너비에 포함되도록 설정 */
+    gap: 24px;
 }
 
 .onclickInner img {
@@ -190,6 +226,8 @@
    grid-template-rows: repeat(2, 1fr); /* 4행 */
    gap: 20px; /* 그리드 항목 사이 간격 */
    padding: 75px 0px 75px;
+   
+   text-align: center;
    }
 
  /* 그리드 항목 내의 이미지 크기 조정 */

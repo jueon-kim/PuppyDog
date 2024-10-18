@@ -1,44 +1,61 @@
-/* --------------------------------------푸터 위쪽(시작)----------------------------------------- */
-
- .container{
-   	width: 1020px;
-    display: block;
-    padding: 20px;
-    margin: 0 auto;
-
-    display: flex;
+/* 전체 페이지가 최소 100vh 높이를 갖도록 설정 */
+html, body {
+    height: 100%;
     flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-	 
 }
 
-.footerMenu{
+/* 메인 콘텐츠가 공간을 차지하게 하고 푸터는 하단에 고정 */
+body {
+    min-height: 100vh;
+}
+
+/* 컨테이너 설정 */
+.container {
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    flex-grow: 1; /* 메인 컨텐츠가 공간을 채울 수 있게 */
+}
+
+/* 푸터가 하단에 고정되도록 설정 */
+footer {
+    padding: 20px;
+    width: 100%;
+    background-color: #f9fafc;
+    bottom: 0;
+    left: 0;
+}
+
+/* 푸터 메뉴 */
+.footerMenu {
     display: flex;
     width: 1020px;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 0px 18px;
+    padding: 18px 0;
 }
 
-.footerBottom{
-	width:1020px;
- 	display: grid;
+/* 푸터 하단 내용 */
+.footerBottom {
+    width: 1020px;
+    display: grid;
     grid-template-columns: repeat(1, 1fr 1fr);
 }
 
-
-.aboutUs{
-	     display: flex;
-    flex-direction: column;
-    padding: 10px 0px 10px;
+/* 기타 스타일 */
+.aboutUs {
+    display: grid;
+    justify-content: flex-start;
+    padding: 10px 0;
+    font-size: 14px;
 }
-.noticeSection{
-	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+.noticeSection {
     display: flex;
-    /* flex-direction: column; */
-    padding: 10px 0px 10px;
+    justify-content: space-around;
+    padding: 10px 0;
 }

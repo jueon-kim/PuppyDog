@@ -31,7 +31,6 @@
 
 <body max-width="1920px">
 
-      
 	  <span class="mainSwiper">
 		   <swiper-container 
 		   		class="mySwiper"
@@ -64,20 +63,44 @@
       
       <span class="mainEvent">
 	    <span class="innerMainEvent">
-	        <div class="bg-image1MainEvent"></div>
+	        <div class="bg-image1MainEvent hoverEvent">
+	        <div class="overlay">
+				<div class="text">프리미엄 사료를 만나보세요!</div>
+	        
+	        </div>
+	        </div>
 	    </span>
 	   
 	   <span class="innerMainEvent"> 
-	        <div class="bg-image2MainEvent"></div>
+	        <div class="bg-image2MainEvent hoverEvent">
+	        <div class="overlay">
+	        
+	        <div class="text">고단백 고양이 간식 BEST</div>
+	        
+	        
+	        </div>
+	        </div>
 	    </span>
 	
 	    <span class="innerMainEvent">
-	        <div class="bg-image3MainEvent"></div>
+	        <div class="bg-image3MainEvent hoverEvent">
+	        <div class="overlay">
+	        
+	        <div class="text">애완 유모차 모음전</div>
+	        
+	        </div>
+	        </div>
 	    </span>
 	    
 	    
 	    <span class="innerMainEvent">
-	        <div class="bg-image4MainEvent"></div>
+	        <div class="bg-image4MainEvent hoverEvent">
+        	<div class="overlay">
+        	
+        	<div class="text">캣타워 출시!</div>
+        	
+        	</div>
+	    </div>
 	    </span>
 	</span>
 
@@ -90,13 +113,7 @@
 		   <span class="subCategory cateGory">
 		        <button id="pageSnack">간식</button>
 		        <button id="pageFeed">사료</button>
-<!-- 		        <button id="pageDress">패션</button> -->
-		       <!--  <button id="pageSalon">미용용품</button>
-		        <button id="pageClean">위생용품</button> -->
-		       <!--  <button id="pageWater">식기/급수기</button> -->
-	      </span> 
-	      
-	
+		   </span>     	
 	      </div>
 	   </div>
 	   
@@ -107,32 +124,28 @@
 	   		
 	   		
 	   		<div class="onclickImg">
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/415b30404c51841846da126e42e84d51.jpg">
-	   			<p>D17 퍼피랜드 4종 캔 100g 24개</p>
-	   			<span>30%</span>
-	   			<span>43,000</span>
+	   			<img width="100%" alt="" src="./img/snack1.jpg">
+	   			<p>고양이 건강식 츄</p>
+	   			<span>30,100원</span>
+	   		</div>
+	   		
+	   		<div class="onclickImg">
+	   			<img width="100%" alt="" src="./img/snack2.jpg">
+	   			<p>강아지 간식</p>
 	   			<span>30,100</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/415b30404c51841846da126e42e84d51.jpg">
-	   			<p>D17 퍼피랜드 4종 캔 100g 24개</p>
-	   			<span>30%</span>
-	   			<span>43,000</span>
-	   			<span>30,100</span>
-	   		</div>
-	   		
-	   		<div class="onclickImg">
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/0e4807af0faa95ce186bb74d2c2bd030.jpg">
-	   			<p>전연령 강아지간식용 순살치킨 젤리타입 영양캔 24EA</p>
+	   			<img width="100%" alt="" src="./img/snack3.jpg">
+	   			<p>고양이 전용 캔(고단백질)</p>
 	   			<span>30%</span>
 	   			<span>83,000원</span>
 	   			<span>57,900원</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/3e2d2da1376a7ee38642ad36d999fa7f.jpg">
-	   			<p>강아지 젤리타입 치킨게살 영양식간식캔 24EA애완용품</p>
+	   			<img width="100%" alt="" src="./img/snack4.jpg">
+	   			<p>강아지 간식(소형견)</p>
 	   			<span>30%</span>
 	   			<span>83,000원</span>
 	   			<span>57,900원</span>
@@ -144,28 +157,28 @@
 	   	<div id="categoryFeed" class="section categroyOption">
 	   		
 	   		<div>
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202407/2231df18bb37125cd788004d5e1d46a2.jpg">
-	   			<p>강아지 토우 저알러지 훈제연어 9.08kg반려견 사료</p>
+	   			<img width="100%" alt="" src="./img/feed1.jpg">
+	   			<p>강아지 유기농 사료</p>
 	   			<span>89,000</span>
 	   		</div>
 	   		
 	   		
 	   		<div>
-	   			<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202407/2231df18bb37125cd788004d5e1d46a2.jpg">
-	   			<p>강아지 토우 저알러지 훈제연어 9.08kg반려견 사료</p>
+	   			<img width="100%" alt="" src="./img/feed2.jpg">
+	   			<p>강아지 사료 3종 set</p>
 	   			<span>89,000</span>
 	   		</div>
 	   		
 	   		<div>
-	   			<img width="100%" alt="" src="//m.puppydog.co.kr/web/product/medium/202407/014c4ffc1f2957f40092a14928c8435d.jpg">
-	   			<p>강아지 토우 저알러지 구운오리 9.08kg반려견 사료</p>
+	   			<img width="100%" alt="" src="./img/feed3.jpg">
+	   			<p>고양이 사료 연어</p>
 	   			<span>89,000원</span>
 	   		</div>
 	   		
 	   		<div>
-	   			<img width="100%" alt="" src="//m.puppydog.co.kr/web/product/medium/202406/0ef5a564ccb38d1148263b9c08531605.jpg">
-	   			<p>애견사료 노령견용 치킨 3kg 1p 강아</p>
-	   			<span>30,800원</span>
+	   			<img width="100%" alt="" src="./img/feed4.jpg">
+	   			<p>고양이 사료 고단백</p>
+	   			<span>40,800원</span>
 	   		</div>
 	   	</div>
 	   	
@@ -181,25 +194,21 @@
 			
 		<div class="itemWapper"> <!-- besttItem grid 적용 -->
  			<div class="bestItemImg">
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202306/45a870229f3d991404d3728c0bb0a728.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemcat1.jpg">
 				<div>
- 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 					<p>고양이 가방</p>
  					<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
-	 					<span>21,700원</span>
+	 					<span>91,700원</span>
  					</span>
 				</div>
  			</div>
  			
  			<div>
  			<div class="bestItemImg">
- 				<img width="100%" width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202302/9a5f139b82f4984707992b63fcdbf730.jpg">
+ 				<img width="100%" width="100%" alt="" src="./img/bestItemcat2.jpg">
  				<div>
- 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 					<p>고양이 화장실 + 삽</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
 	 					<span>21,700원</span>
 	 				</span>
  				</div>
@@ -208,12 +217,10 @@
  			
  			<div>
  			<div class="bestItemImg">
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/cb8017b1e1d9142f9a01b831d8848c88.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemcat3.jpg">
  				<div>
- 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 					<p>고양이 스크래쳐</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
 	 					<span>21,700원</span>
  					</span>
  					</div>
@@ -222,13 +229,11 @@
  			
  			<div>
  			<div class="bestItemImg">
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/03992dce0da562dc9d19ba16941cc767.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemcat4.jpg">
  				<div>
- 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 					<p>애완견 이동식 캐리어</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
-	 					<span>21,700원</span>
+	 					<span>31,700원</span>
  					</span>
  				</div>
  				</div>
@@ -236,13 +241,11 @@
  			
  			
  			<div class="bestItemImg">
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/e15c91e5be4d212ae1e71a0575f22c58.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemdog1.jpg">
  				<div>
  					<div>
- 						<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 						<p>애완견 유모차</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
 	 					<span>21,700원</span>
 	 				</span>
  					</div>
@@ -251,12 +254,10 @@
  			
  			<div>
  			<div class="bestItemImg"> <!-- 2번째행 -->
- 				<img  alt="" src="//puppydog.co.kr/web/product/medium/202305/1b4647b715fc985acc8b098b4f582ebd.jpg">
+ 				<img  alt="" src="./img/bestItemdog2.jpg">
  					<div>
- 						<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 						<p>강아지 식수대</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
 	 					<span>21,700원</span>
 	 				</span>
  				</div>	
@@ -265,12 +266,10 @@
  			
  			<div>
  			<div class="bestItemImg">
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/cb8017b1e1d9142f9a01b831d8848c88.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemdog3.jpg">
  				<div>
- 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+ 					<p>소형견 전용 목줄</p>
 						<span>
-		 					<span>34%</span>
-		 					<span>33,000원</span>
 		 					<span>21,700원</span>
 	 					</span>
  					</div>
@@ -279,13 +278,11 @@
  			
  			<div>
  			<div>
- 				<img width="100%" alt="" src="//puppydog.co.kr/web/product/medium/202305/efbf07212e859bb1b031760b45cceb9f.jpg">
+ 				<img width="100%" alt="" src="./img/bestItemdog4.jpg">
  					<div>
-	 					<p>강아지 자동줄 3m 코드타입 1p,강아지 리드줄 자동줄 개줄 자동</p>
+	 					<p>대형견 전용 목줄</p>
 	 				<span>
-	 					<span>34%</span>
-	 					<span>33,000원</span>
- 						<span>21,700원</span>
+	 					<span>21,700원</span>
  					</span>
  					</div>
  				</div>

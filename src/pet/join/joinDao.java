@@ -20,12 +20,12 @@ public class joinDao {
 
     public Connection getConnection() throws Exception {
         Connection conn = null;
-        String url = "jdbc:mysql://localhost:3306/mydb"; // MySQL 데이터베이스 URL
+        String url = "jdbc:mysql://localhost:3306/puppyDog"; // MySQL 데이터베이스 URL
         String username = "root"; // MySQL 사용자 이름
-        String password = "mysql"; // MySQL 암호
+        String password = "kimjueon"; // MySQL 암호
 
         try {
-            Class.forName("com.mysql.jdbc.Driver"); // MySQL 드라이버 클래스
+        	Class.forName("com.mysql.cj.jdbc.Driver");
             conn = DriverManager.getConnection(url, username, password);
 
             System.out.println("연결성공");

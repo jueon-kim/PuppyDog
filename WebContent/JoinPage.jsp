@@ -18,84 +18,72 @@
 </style>
 
 </head>
-<body>
+<body max-width="1920px">
 <jsp:include page="./module/header_fin.jsp"/>
-	<div class="join-container">
-		<!-- 상단(JOIN)부분 -->
-	    <div class="join-title">
-	        <p>회원가입</p>
-	        <hr style="width: 1px; margin: 0 auto;">
-	    </div>
-	    
-	  <!--   <hr style="color: rgba(0, 0, 0, 0.6)">
-	    
-	    <div class="container join-container">
-	    	<p>아래 회원가입 양식을 입력해주세요.</p>
-	    </div> -->
-	    
-	    <!-- <hr style="color: rgba(0, 0, 0, 0.6)"> -->
-	    
+	<span class="join-container">
+	
 	    <!-- 상품 등록 박스 -->
 	    <form class="join-inner" action="join.do" method="post">
-	    	<table class="join-table">
+	    	<span class="joinWapper">
+		    	 <div class="join-title">
+		       		<span class="textOption">회원가입</span>
+		    	</div>
 	    	
-	    		<tr>
-	    			<td>구분</td>
-	    		</tr>
-	    		<tr>
-	    			<td>아이디&nbsp;<span>*</span></td>
-	    			<td><input type="text" name="user_id" placeholder="ID"></td>
-	    		</tr>
+	    		<span class="userInfo">
+	    			<span class="textOption">아이디</span>
+	    			<input type="text" name="user_id" placeholder="ID">
+	    		</span>
 	    		
-	    		<tr>
-	    			<td>이름&nbsp;<span>*</span></td>
-	    			<td><input type="text" name="user_name"></td>
-	    		</tr>
+	    		<span class="userInfo">
+	    			<span class="textOption">이름</span>
+	    			<input type="text" name="user_name">
+	    		</span>
 	    		
-	    		<tr>
-	    			<td>비밀번호&nbsp;<span>*</span></td>
-	    			<td><input type="password" name="user_pw" placeholder="Password"></td>
-	    		</tr>
-	    		<tr>
-	    			<td>비밀번호확인&nbsp;<span>*</span></td>
-	    			<td><input type="password" name="user_pw" placeholder="Confirm Password"></td>
-	    		</tr>
+	    		<span class="userInfo">
+	    			<span class="textOption">비밀번호</span>
+	    			<input type="password" name="user_pw" placeholder="Password">
+	    		</span>
 	    		
-	    		<tr>
-	    			<td>휴대폰&nbsp;<span>*</span></td>
-	    			<td><select id="user_phone" name="user_phone1" size="1">
-	    					<option value="010" selected>010</option>
-	    					<option value="011">011</option>
-	    					<option value="013">013</option>
-	    					<option value="017">017</option>
-	    					<option value="017">019</option>
-	    				</select>
-	    				<input type="text" name="user_phone" maxlength="4" placeholder="0000"> &nbsp; - &nbsp; 
-	    				<input type="text" name="user_phone" maxlength="4" placeholder="0000">
-	    			</td>
-	    		</tr>
+	    		<span class="userInfo">
+	    			<span class="textOption">비밀번호확인</span>
+	    			<input type="password" name="user_pw" placeholder="Confirm Password">
+	    		</span>
 	    		
-	    		<tr>
-	    			<td>주소&nbsp;<span>*</span></td>
-	    			<td><input type="text" name="user_address"></td>
-	    		</tr>
+	    		<span class="userInfo phone_Text">
+	    			<span class="textOption">휴대폰</span>
+	    			
+	    			<span>
+	    				 <span id="user_phone_text">010</span> <!-- 010을 텍스트로 표시 -->
+<!-- 	    				<input type="text" id="user_phone" name="user_phone1" value="010" placeholder="010"> -->
+	    				<input class="phone" type="text" name="user_phone" maxlength="4">
+	    				<input class="phone" type="text" name="user_phone" maxlength="4">
+	    			</span>
+	    		</span>
 	    		
-	    		<tr>
-	    			<td>이메일&nbsp;<span>*</span></td>
-	    			<td class="email_chk"><input type="text" name="user_email" placeholder="user@domain.com"></td>
-	    		</tr>
-	    		<tr>
-	    			<td colspan="2" align="center">
+	    		<span class="userInfo">
+	    			<span class="textOption">주소</span>
+	    			<input type="text" name="user_address">
+	    		</span>
+	    		
+	    		<span class="userInfo">
+	    			<span class="textOption">이메일</span>
+	    			<span class="email_chk">
+	    			<input type="text" name="user_email" placeholder="email@naver.com">
+	    			</span>
+	    		</span>
+	    		
+	    		<span>
+	    			<span class="userInfo joinButton">
 	    				<input class="btn-join" type="submit" value="회원가입" 
-	    				style="color: white; font-weight: bolder; background: #3ed4be;">&nbsp;&nbsp;
+	    				style="color: white; font-weight: bolder; background: #3ed4be;">
 	    			<input class="btn-cancel" type="reset" value="취소" style="color: rgba(0, 0, 0, 1); font-weight: bolder;">
-	    			</td>
-	    		</tr>
-	    	</table>
+	    			</span>
+	    		</span>
+	    	</span>
 	    </form>
 	    
-	</div>
-	<br><br>
+	</span>
+
 
 
 <jsp:include page="/module/footer.html"/>

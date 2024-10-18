@@ -26,7 +26,7 @@
 					    <a href="#">내 정보 수정</a>
 					    <a href="#">내 게시글 보</a>
 					    <a href="./userLogin.jsp">로그인</a>
-					    <a href="#">회원가입</a>
+					    <a href="./JoinPage.jsp">회원가입</a>
 					</div>
             	</div>
             
