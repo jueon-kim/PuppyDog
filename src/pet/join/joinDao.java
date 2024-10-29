@@ -6,6 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.jsp.jstl.tlv.ScriptFreeTLV;
+
 
 public class joinDao {
 	public joinDao() {
@@ -20,67 +22,78 @@ public class joinDao {
 
     public Connection getConnection() throws Exception {
         Connection conn = null;
-        String url = "jdbc:mysql://localhost:3306/puppyDog"; // MySQL 데이터베이스 URL
+        String url = "jdbc:mysql://localhost:3306/puppyDog?useUnicode=true&characterEncoding=utf-8";
+//        Connection conn = DriverManager.getConnection(url, "username", "password");
+
         String username = "root"; // MySQL 사용자 이름
         String password = "kimjueon"; // MySQL 암호
 
         try {
-        	Class.forName("com.mysql.cj.jdbc.Driver");
+        	Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(url, username, password);
 
             System.out.println("연결성공");
         } catch (SQLException e) {
 
             e.printStackTrace(); // 연결 오류 처리
-            System.out.println("연결미ㅏㄴ얼");
+            System.out.println("연결실패");
         }
-
         return conn;
     }
 
 
 	// 회	===========	원	============	가	==============	입
-	public int insertJoin(joinVO vo) {
-		int result = -1;
+    public int insertJoin(joinVO vo) {
+        int result = -1;
 
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		String query = "INSERT INTO user (user_id, user_name, user_pw, user_phone, user_address, user_email) VALUES (?, ?, ?, ?, ?, ?)";
-		// int res = 0;
+        Connection conn = null;
+        PreparedStatement checkStmt = null;
+        PreparedStatement insertStmt = null;
+        ResultSet rs = null;
 
-		try {
-			conn = getConnection();
-			pstmt = conn.prepareStatement(query);
+        String checkQuery = "SELECT COUNT(*) FROM user WHERE user_id = ?";
+        String insertQuery = "INSERT INTO user (user_id, user_name, user_pw, user_phone, user_address, user_email) VALUES (?, ?, ?, ?, ?, ?)";
 
-			pstmt.setString(1, vo.getUser_id());
-			pstmt.setString(2, vo.getUser_name());
-			pstmt.setString(3, vo.getUser_pw());
-			pstmt.setString(4, vo.getUser_phone());
-			pstmt.setString(5, vo.getUser_address());
-			pstmt.setString(6, vo.getUser_email());
+        try {
+            conn = getConnection();
 
-			result = pstmt.executeUpdate();
+            // 아이디 중복 체크
+            checkStmt = conn.prepareStatement(checkQuery);
+            checkStmt.setString(1, vo.getUser_id());
+            rs = checkStmt.executeQuery();
 
-		} catch (Exception e) {
-			System.out.println("1");
-			e.printStackTrace();
+            if (rs.next() && rs.getInt(1) > 0) { 
+                System.out.println("아이디가 이미 존재합니다.");
+                return 0; // 아이디 중복 시 0을 반환
+            }
 
-		} finally {
-			try {
-				if(pstmt != null) {
-					pstmt.close();
-				}
-				if(conn != null ) {
-					conn.close();
-				}
-			} catch(Exception e) {
+            // 중복이 없을 경우 데이터 삽입
+            insertStmt = conn.prepareStatement(insertQuery);
+            insertStmt.setString(1, vo.getUser_id());
+            insertStmt.setString(2, vo.getUser_name());
+            insertStmt.setString(3, vo.getUser_pw());
+            insertStmt.setString(4, vo.getUser_phone());
+            insertStmt.setString(5, vo.getUser_address());
+            insertStmt.setString(6, vo.getUser_email());
 
-				e.printStackTrace();
-			}
-		}
-		return result;
-	}
+            result = insertStmt.executeUpdate(); // 삽입 성공 시 영향받은 행 수 반환
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (checkStmt != null) checkStmt.close();
+                if (insertStmt != null) insertStmt.close();
+                if (conn != null) conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+
+	
 // ========로 ===============그 ============== 인
 	public boolean LoginCheck(String user_id, String user_pw) throws Exception {
 		boolean result = false;

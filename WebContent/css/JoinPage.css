@@ -8,7 +8,8 @@
     }
 	.joinWapper{
 	    display: grid;
-    	grid-template-rows: repeat(5, 1fr 1fr);
+    	    grid-template-rows: repeat(4, 4fr 2fr);
+
 }
     .join-container .join-title > p {	/* 얘는 왜 색깔 안됨??? */
     	font-size: 22px;
@@ -23,12 +24,11 @@
     	font-size: 14px;
     }
     
-    .userInfo{
-		display: grid;
-    	grid-template-columns: repeat(1, 1fr 1fr);
-	    align-items: center;
-    }
-    
+    .userInfo {
+       display: grid;
+    grid-template-columns: repeat(1, 1fr 2fr 1fr);
+    align-items: center;
+    } 
     
     .userInfo input {
 	    margin-right: 10px; /* 각 input 요소 간에 10px 간격 추가 */
@@ -49,7 +49,7 @@
 	.joinButton{
 	    display: flex;
 	    align-items: center;
-	    justify-content: center;
+	    padding: 24px 0px 20px;
     }
     
     .join-container{
@@ -71,9 +71,10 @@
     	
     }
     
-    .join-container .btn-join {
-/* 		background: #3ed4be;*/
-		color: white;
+    .join-container .btn-join, .idCheck {
+		color: white; 
+		font-weight: bolder; 
+		background: #3ed4be;
 		border: 1px solid lightgray;
 		width: 125px;
 		height: 50px;

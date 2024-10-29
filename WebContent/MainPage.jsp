@@ -23,14 +23,14 @@
   
   
     <meta charset="UTF-8">
-    <jsp:include page="./module/header_fin.jsp" flush="false"/>
+
     <title>PuppyDog</title>
 
 
 </head>
 
 <body max-width="1920px">
-
+    <jsp:include page="./module/header_fin.jsp" flush="false"/>
 	  <span class="mainSwiper">
 		   <swiper-container 
 		   		class="mySwiper"
@@ -138,16 +138,12 @@
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack3.jpg">
 	   			<p>고양이 전용 캔(고단백질)</p>
-	   			<span>30%</span>
-	   			<span>83,000원</span>
 	   			<span>57,900원</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack4.jpg">
 	   			<p>강아지 간식(소형견)</p>
-	   			<span>30%</span>
-	   			<span>83,000원</span>
 	   			<span>57,900원</span>
 	   		</div>
 	   	</div>

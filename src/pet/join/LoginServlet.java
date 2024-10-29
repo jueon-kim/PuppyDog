@@ -88,10 +88,4 @@ public class LoginServlet extends HttpServlet {
 	        super.service(req, resp);
 	    }
 	}
-
-
-
-
-
-
 }

@@ -1,47 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <!DOCTYPE html>
 
 <head>
-    <title>Document</title>
-   
+    <title>Header</title>
 </head>
 
-
 <body>
-
+<form action="<%=request.getContextPath()%>/Logout.do" method="post">
     <div class="headerwapper">
         <div class="firstHeader">
-			
             <!-- 헤더 로 -->
           <span>
           	<img src="./img/Mainlogo.jpg" width="150px" height="150px">
-		</span>
+		</span>	
 
 			<div class="userSection">
+			
 				<div class="dropdown">
 					<a class="dropbtn">
-					<img width="25" height="25" src="https://img.icons8.com/parakeet-line/48/user.png" alt="user"/></a>
+						<img width="25" height="25" src="https://img.icons8.com/parakeet-line/48/user.png" alt="user">
+					</a>
+					  
 					  <div class="dropdown-content">
-					    <a href="#">내 정보 수정</a>
-					    <a href="#">내 게시글 보</a>
-					    <a href="./userLogin.jsp">로그인</a>
-					    <a href="./JoinPage.jsp">회원가입</a>
+						    <a href="#">내 정보 수정</a>
+						    <a href="#">내 게시글 보기</a>
+						    
+						   <c:if test="${sessionScope.user_id == null}">
+							    <a href="./userLogin.jsp">로그인</a>
+							    <a href="./JoinPage.jsp">회원가입</a>
+							</c:if>
+							
+							<c:if test="${sessionScope.user_id != null}">
+							    <a><%= (String) session.getAttribute("user_id") %>님</a>
+							    
+    								<button type="submit">로그아웃</button>
+							</c:if>
+						</div>
+             	</div>
+					    
+					  <div class="dropdown">
+					  	<a class="dropbtn">
+					  		<img width="25" height="25" src="https://img.icons8.com/ios/25/truck--v1.png" alt="truck--v1"/>
+					  	</a>
+					    <div class="dropdown-content">
+						    <a href="#">입금전</a>
+						    <a href="#">배송준비중</a>
+							<a href="#">배송완료</a>
+						</div>
 					</div>
-            	</div>
+
             
             	 <div class="dropdown">
 					<a class="dropbtn">
-					<img width="25" height="25" src="https://img.icons8.com/sf-ultralight/50/shipped.png" alt="shipped"/></a>
-					  <div class="dropdown-content">
-					    <a href="#">입금전</a>
-					    <a href="#">배송준비중</a>
-						<a href="#">배송완료</a>
-					</div>
-            	</div>
-            
-            	 <div class="dropdown">
-					<a class="dropbtn"><img width="25" height="25" src="https://img.icons8.com/ios/50/ask-question--v1.png" alt="ask-question--v1"/></a>
+						<img width="25" height="25" src="https://img.icons8.com/ios/50/ask-question--v1.png" alt="ask-question--v1"/>
+					</a>
+					
 					  <div class="dropdown-content">
 					    <a href="#">NOTICE</a>
 					    <a href="#">REVIEW</a>
@@ -50,9 +65,10 @@
 					    <a href="#">F A Q</a>
 					</div>
             	</div>
+
         </div>
 	</div>
- 
+	</div>
 	<div class="secondHeader">
 
          <div class="dropdown">
@@ -253,8 +269,8 @@
             
             
 </div>
-	</div>
- 
+
+ </form>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>    
 </body>
   
