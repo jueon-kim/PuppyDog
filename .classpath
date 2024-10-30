@@ -14,5 +14,6 @@
 	<classpathentry kind="lib" path="/Users/kimjueon/Desktop/develop/apache-tomcat-9.0.93/lib/mysql-connector-java-5.1.49.jar"/>
 	<classpathentry kind="lib" path="/Users/kimjueon/Desktop/develop/apache-tomcat-9.0.93/lib/Google Code Archive JSON Simple.jar"/>
 	<classpathentry kind="lib" path="/Users/kimjueon/Desktop/develop/apache-tomcat-9.0.93/lib/json-simple 1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/kimjueon/Desktop/develop/puppyDog/WebContent/WEB-INF/lib/Mockito Core 5.7.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

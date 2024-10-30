@@ -35,7 +35,13 @@
 							<c:if test="${sessionScope.user_id != null}">
 							    <a><%= (String) session.getAttribute("user_id") %>님</a>
 							    
-    								<button type="submit">로그아웃</button>
+    								<button type="submit" style="padding: 12px 16px;
+															     color: none;
+															     box-decoration-break: none;
+															     border: none;
+															     outline: none;
+															     background-color: inherit;
+															     cursor: pointer;">로그아웃</button>
 							</c:if>
 						</div>
              	</div>
