@@ -60,7 +60,7 @@ public class LoginServlet extends HttpServlet {
 		    session.setAttribute("user_name", userName);
 		    session.setAttribute("message", "로그인 성공");
 
-		    resp.sendRedirect("MainPage.jsp"); // 로그인 성공 시 MainPage.jsp로 리다이렉트
+		    resp.sendRedirect("index.jsp"); // 로그인 성공 시 MainPage.jsp로 리다이렉트
 		} else {
 		    req.setAttribute("message", "로그인 실패");
 		    RequestDispatcher dispatcher = req.getRequestDispatcher("userLogin.jsp");

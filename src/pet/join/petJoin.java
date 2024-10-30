@@ -98,7 +98,7 @@ public class petJoin extends HttpServlet{
             resp.sendRedirect("userLogin.jsp");
         } else {
             req.setAttribute("message", "회원가입 실패");
-            RequestDispatcher dispatcher = req.getRequestDispatcher("MainPage.jsp");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("index.jsp");
             dispatcher.forward(req, resp);
         }
     }

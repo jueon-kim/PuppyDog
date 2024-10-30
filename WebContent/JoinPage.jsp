@@ -75,7 +75,7 @@
             <span>
                 <span class="userInfo joinButton">
                     <input type="submit" name="action" value="회원가입" class="btn-join" style="color: white; font-weight: bolder; background: #3ed4be;">
-                    <input class="btn-cancel" type="reset" value="취소" onclick="location.href='MainPage.jsp';" style="color: rgba(0, 0, 0, 1); font-weight: bolder;">
+                    <input class="btn-cancel" type="reset" value="취소" onclick="location.href='index.jsp';" style="color: rgba(0, 0, 0, 1); font-weight: bolder;">
                 </span>
             </span>
 </span>
