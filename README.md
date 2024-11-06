@@ -17,8 +17,43 @@
 
 # 유효성 검사
 ![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
-# 테스트 코드 일부 
-'   		
+
+	  function validateForm() {
+	            const user_id = document.getElementById("user_id").value;
+	            const user_pw = document.getElementById("user_pw").value;
+	            const user_pw_confirm = document.getElementById("user_pw_confirm").value;
+         
+            const user_name = document.getElementById("user_name").value;  // user_name 추가
+            const korean = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]+$/;  // 한글만 허용하는 정규식
+
+            // 필수 입력 항목 확인
+            if (user_id === "" || user_pw === "" || user_pw_confirm === "") {
+                alert("모두 입력해주세요");
+                return false;
+            }
+			
+        	 // 이름에 한글만 허용
+            if (!korean.test(user_name)) {  // test() 메서드를 사용하여 검증
+                alert("이름은 한글만 입력이 가능합니다");
+                return false;
+            }
+            
+            // 비밀번호 길이 확인
+            if (user_pw.length < 8) {
+                alert("비밀번호는 8자 이상이어야 합니다");
+                return false;
+            }
+
+            if (user_pw !== user_pw_confirm) {
+                alert("비밀번호가 일치하지 않습니다.");
+                return false;
+            }
+
+            return true; // 유효성 검사 통과
+        }
+
+
+# 테스트 코드 적용	
 
     아이디 중복 체크
     public boolean isUserIdDuplicate(String userId) throws SQLException {
