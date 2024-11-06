@@ -71,6 +71,27 @@
         }
     } '
 
+# Error
+![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
+* web.xml에 지정된 메인페이로 안내하는 에러 페이지 설정입니다.
+
+        <error-page>
+        	<exception-type>java.lang.NullPointerException</exception-type>
+           	<location>/WEB-INF/err/errorNull.jsp</location>
+        </error-page>
+	
+    	<error-page>
+    		<error-code>404</error-code>
+       		<location>/WEB-INF/err/error404.jsp</location>
+    	</error-page>
+    	
+    	<error-page>
+    		<error-code>500</error-code>
+       		<location>/WEB-INF/err/error500.jsp</location>
+    	</error-page>	
+
+
+
 # ERD
 <img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
 
