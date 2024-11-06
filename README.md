@@ -18,13 +18,9 @@
 # 유효성 검사
 ![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
 # 테스트 코드 일부 
-' class jdbcTest {
+'   		
 
-	  private static final String URL = "jdbc:mysql://localhost:3306/puppyDog";
-    private static final String USER = "root";  // MySQL 사용자 이름
-    private static final String PASSWORD = "kimjueon";  // MySQL 사용자 비밀번호
-   
- // 아이디 중복 체크
+    아이디 중복 체크
     public boolean isUserIdDuplicate(String userId) throws SQLException {
         String checkQuery = "SELECT COUNT(*) FROM user WHERE user_id = ?";
         
@@ -74,3 +70,9 @@
             fail("JDBC 연결 실패: " + e.getMessage());
         }
     } '
+
+# ERD
+<img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
+
+
+    
