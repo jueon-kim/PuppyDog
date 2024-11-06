@@ -52,6 +52,9 @@
             return true; // 유효성 검사 통과
         }
 
+# 로그인후
+
+![로그인후](https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad)
 
 # 테스트 코드 적용	
 
