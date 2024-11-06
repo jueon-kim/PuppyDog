@@ -13,7 +13,7 @@
         <div class="firstHeader">
             <!-- 헤더 로 -->
           <span>
-          	<img src="./img/Mainlogo.jpg" width="150px" height="150px">
+          	<img src="./img/PetTownLogo.png" width="100px" height="100px">
 		</span>	
 
 			<div class="userSection">

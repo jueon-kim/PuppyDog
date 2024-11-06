@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+   /*  padding: 20px; */
     margin: 0 auto;
     flex-grow: 1; /* 메인 컨텐츠가 공간을 채울 수 있게 */
 }

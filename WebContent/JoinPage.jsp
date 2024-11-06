@@ -96,7 +96,9 @@
             const user_id = document.getElementById("user_id").value;
             const user_pw = document.getElementById("user_pw").value;
             const user_pw_confirm = document.getElementById("user_pw_confirm").value;
-            const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+         
+            const user_name = document.getElementById("user_name").value;  // user_name 추가
+            const korean = /^[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]+$/;  // 한글만 허용하는 정규식
 
             // 필수 입력 항목 확인
             if (user_id === "" || user_pw === "" || user_pw_confirm === "") {

@@ -105,9 +105,8 @@
 	</span>
 
     <div class="mainCategoryWapper">	
- 		<span class="mainCategory cateGory">
+ 		<div class="mainCategory cateGory">
 	    	<p>주목받는 아이템</p>
-	    </span>
 
 	  <div class="mainItem"> 
 		   <span class="subCategory cateGory">
@@ -116,6 +115,7 @@
 		   </span>     	
 	      </div>
 	   </div>
+	    </div>
 	   
 	   <div class="onclickCategory">
 	   	<div class="onclickInner">
@@ -125,26 +125,26 @@
 	   		
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack1.jpg">
-	   			<p>고양이 건강식 츄</p>
-	   			<span>30,100원</span>
+	   			<p class="title">고양이 건강식 츄르</p>
+	   			<span class="price">30,100원</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack2.jpg">
-	   			<p>강아지 간식</p>
-	   			<span>30,100</span>
+	   			<p class="title">강아지 간식</p>
+	   			<span class="price">30,100</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack3.jpg">
-	   			<p>고양이 전용 캔(고단백질)</p>
-	   			<span>57,900원</span>
+	   			<p class="title">고양이 전용 캔(고단백질)</p>
+	   			<span class="price">57,900원</span>
 	   		</div>
 	   		
 	   		<div class="onclickImg">
 	   			<img width="100%" alt="" src="./img/snack4.jpg">
-	   			<p>강아지 간식(소형견)</p>
-	   			<span>57,900원</span>
+	   			<p class="title">강아지 간식(소형견)</p>
+	   			<span class="price">57,900원</span>
 	   		</div>
 	   	</div>
 	   	
@@ -154,27 +154,27 @@
 	   		
 	   		<div>
 	   			<img width="100%" alt="" src="./img/feed1.jpg">
-	   			<p>강아지 유기농 사료</p>
-	   			<span>89,000</span>
+	   			<p class="title">강아지 유기농 사료</p>
+	   			<span class="price">89,000원</span>
 	   		</div>
 	   		
 	   		
 	   		<div>
 	   			<img width="100%" alt="" src="./img/feed2.jpg">
-	   			<p>강아지 사료 3종 set</p>
-	   			<span>89,000</span>
+	   			<p class="title">강아지 사료 3종 set</p>
+	   			<span class="price">89,000원</span>
 	   		</div>
 	   		
 	   		<div>
 	   			<img width="100%" alt="" src="./img/feed3.jpg">
-	   			<p>고양이 사료 연어</p>
-	   			<span>89,000원</span>
+	   			<p class="title">고양이 사료 연어</p>
+	   			<span class="price">89,000원</span>
 	   		</div>
 	   		
 	   		<div>
 	   			<img width="100%" alt="" src="./img/feed4.jpg">
-	   			<p>고양이 사료 고단백</p>
-	   			<span>40,800원</span>
+	   			<p class="title">고양이 사료 고단백</p>
+	   			<span class="price">40,800원</span>
 	   		</div>
 	   	</div>
 	   	
@@ -192,9 +192,9 @@
  			<div class="bestItemImg">
  				<img width="100%" alt="" src="./img/bestItemcat1.jpg">
 				<div>
- 					<p>고양이 가방</p>
+ 					<p class="title">고양이 가방</p>
  					<span>
-	 					<span>91,700원</span>
+	 					<span class="price">91,700원</span>
  					</span>
 				</div>
  			</div>
@@ -203,9 +203,9 @@
  			<div class="bestItemImg">
  				<img width="100%" width="100%" alt="" src="./img/bestItemcat2.jpg">
  				<div>
- 					<p>고양이 화장실 + 삽</p>
+ 					<p class="title">고양이 화장실 + 삽</p>
 	 				<span>
-	 					<span>21,700원</span>
+	 					<span class="price">21,700원</span>
 	 				</span>
  				</div>
  				</div>
@@ -215,9 +215,9 @@
  			<div class="bestItemImg">
  				<img width="100%" alt="" src="./img/bestItemcat3.jpg">
  				<div>
- 					<p>고양이 스크래쳐</p>
+ 					<p class="title">고양이 스크래쳐</p>
 	 				<span>
-	 					<span>21,700원</span>
+	 					<span class="price">21,700원</span>
  					</span>
  					</div>
  				</div>
@@ -227,9 +227,9 @@
  			<div class="bestItemImg">
  				<img width="100%" alt="" src="./img/bestItemcat4.jpg">
  				<div>
- 					<p>애완견 이동식 캐리어</p>
+ 					<p class="title">애완견 이동식 캐리어</p>
 	 				<span>
-	 					<span>31,700원</span>
+	 					<span class="price">31,700원</span>
  					</span>
  				</div>
  				</div>
@@ -240,9 +240,9 @@
  				<img width="100%" alt="" src="./img/bestItemdog1.jpg">
  				<div>
  					<div>
- 						<p>애완견 유모차</p>
+ 						<p class="title">애완견 유모차</p>
 	 				<span>
-	 					<span>21,700원</span>
+	 					<span class="price">21,700원</span>
 	 				</span>
  					</div>
  				</div>
@@ -252,9 +252,9 @@
  			<div class="bestItemImg"> <!-- 2번째행 -->
  				<img  alt="" src="./img/bestItemdog2.jpg">
  					<div>
- 						<p>강아지 식수대</p>
+ 						<p class="title">강아지 식수대</p>
 	 				<span>
-	 					<span>21,700원</span>
+	 					<span class="price">21,700원</span>
 	 				</span>
  				</div>	
  				</div>
@@ -264,9 +264,9 @@
  			<div class="bestItemImg">
  				<img width="100%" alt="" src="./img/bestItemdog3.jpg">
  				<div>
- 					<p>소형견 전용 목줄</p>
+ 					<p class="title">소형견 전용 목줄</p>
 						<span>
-		 					<span>21,700원</span>
+		 					<span class="price">21,700원</span>
 	 					</span>
  					</div>
  				</div>
@@ -276,21 +276,16 @@
  			<div>
  				<img width="100%" alt="" src="./img/bestItemdog4.jpg">
  					<div>
-	 					<p>대형견 전용 목줄</p>
+	 					<p class="title">대형견 전용 목줄</p>
 	 				<span>
-	 					<span>21,700원</span>
+	 					<span class="price">21,700원</span>
  					</span>
  					</div>
  				</div>
  			</div>
  			
- 			
- 			
  		</div>
 	</div>
-
-
-
 
 
   </div>
