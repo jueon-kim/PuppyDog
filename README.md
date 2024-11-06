@@ -13,3 +13,64 @@
 
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
+
+
+# 유효성 검사
+![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
+# 테스트 코드 일부 
+' class jdbcTest {
+
+	  private static final String URL = "jdbc:mysql://localhost:3306/puppyDog";
+    private static final String USER = "root";  // MySQL 사용자 이름
+    private static final String PASSWORD = "kimjueon";  // MySQL 사용자 비밀번호
+   
+ // 아이디 중복 체크
+    public boolean isUserIdDuplicate(String userId) throws SQLException {
+        String checkQuery = "SELECT COUNT(*) FROM user WHERE user_id = ?";
+        
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement checkStmt = conn.prepareStatement(checkQuery)) {
+            
+            checkStmt.setString(1, userId);
+            ResultSet rs = checkStmt.executeQuery();
+            
+            if (rs.next() && rs.getInt(1) > 0) {
+                System.out.println("아이디가 이미 존재합니다.");
+                return true; // 중복된 아이디가 있는 경우 true 반환
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new SQLException("아이디 중복 체크 중 오류 발생: " + e.getMessage());
+        }
+        
+        return false; // 중복되지 않은 경우 false 반환
+    }
+
+    // 1. 데이터 삽입 테스트
+    @Test
+    public void testInsert() throws SQLException {
+        try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
+            System.out.println("MySQL JDBC 연결 성공");
+            assertNotNull(conn);
+
+            // 1. 중복 체크 쿼리
+            String insertSql = "INSERT INTO user (user_id, user_name, user_pw, user_phone, user_address, user_email) VALUES (?, ?, ?, ?, ?, ?)";
+
+            // 2. 중복이 없으면 삽입 쿼리 실행
+            try (PreparedStatement insertStmt = conn.prepareStatement(insertSql)) {
+                insertStmt.setString(1, "user123");
+                insertStmt.setString(2, "John Doe");
+                insertStmt.setString(3, "password123");
+                insertStmt.setString(4, "010-1234-5678");
+                insertStmt.setString(5, "Seoul, South Korea");
+                insertStmt.setString(6, "john.doe@example.com");
+
+                int rowsInserted = insertStmt.executeUpdate();
+                assertEquals(1, rowsInserted, "1개의 행이 삽입되어야 합니다.");
+                System.out.println("데이터 삽입 성공");
+            }
+
+        } catch (SQLException e) {
+            fail("JDBC 연결 실패: " + e.getMessage());
+        }
+    } '
