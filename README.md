@@ -11,7 +11,7 @@
 
 |화면|이미지|
 | :---:| :---: |
-| 메인화면|<img width="400" alt="메인화면"src="https://github.com/user-attachments/assets/c2539e94-31ff-49c5-b2ae-c4d0f2fef2b8">|
+| 메인화면|<img width="400" alt="메인화면" src="https://github.com/user-attachments/assets/c2539e94-31ff-49c5-b2ae-c4d0f2fef2b8">|
 |로그인화면|<img width="400" alt="로그인화면" src="https://github.com/user-attachments/assets/dcbb49b4-990d-484f-8026-76a176eaac58"></br>https://github.com/jueon-kim/PuppyDog/blob/66cfa13847659fd722e7aaabbbd625a048a068ce/src/pet/join/LoginServlet.java|
 |회원가입|<img width="400" alt="회원가입화면" src="https://github.com/user-attachments/assets/162461c1-3a73-46e1-bd07-e779dcd40e63"></br>https://github.com/jueon-kim/PuppyDog/blob/66cfa13847659fd722e7aaabbbd625a048a068ce/src/pet/join/petJoin.java
 |로그인완료|<img width="400" alt="헤더" src="https://github.com/user-attachments/assets/416fbe85-e8cb-4c52-9802-cb77df2c9fc2">
