@@ -34,14 +34,13 @@
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/src/pet/join/jdbcTest.java
 
 # Error
-![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
-* web.xml에 지정된 메인페이로 안내하는 에러 페이지 설정입니다.
-
-## 에러처리 코드
-
 * https://github.com/jueon-kim/PuppyDog/blob/06a0777e271095e24b376920df46e7bfb55bf136/WebContent/WEB-INF/err/error500.jsp
 * https://github.com/jueon-kim/PuppyDog/blob/b4bdbd99d75347514810ae87a6c3da48451a6880/WebContent/WEB-INF/err/error404.jsp
 * https://github.com/jueon-kim/PuppyDog/blob/06a0777e271095e24b376920df46e7bfb55bf136/WebContent/WEB-INF/err/errorNullPointerException.jsp
+
+![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
+* web.xml에 지정된 메인페이로 안내하는 에러 페이지 설정입니다.
+
 
 # ERD
 <img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
