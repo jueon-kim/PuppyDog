@@ -16,7 +16,7 @@
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
-https://github.com/jueon-kim/PuppyDog/blob/b4bdbd99d75347514810ae87a6c3da48451a6880/WebContent/WEB-INF/err/error404.jsp
+
 # 유효성 검사
 ![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
 
@@ -120,22 +120,11 @@ https://github.com/jueon-kim/PuppyDog/blob/b4bdbd99d75347514810ae87a6c3da48451a6
 ![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
 * web.xml에 지정된 메인페이로 안내하는 에러 페이지 설정입니다.
 
-        <error-page>
-        	<exception-type>java.lang.NullPointerException</exception-type>
-           	<location>/WEB-INF/err/errorNull.jsp</location>
-        </error-page>
-	
-    	<error-page>
-    		<error-code>404</error-code>
-       		<location>/WEB-INF/err/error404.jsp</location>
-    	</error-page>
-    	
-    	<error-page>
-    		<error-code>500</error-code>
-       		<location>/WEB-INF/err/error500.jsp</location>
-    	</error-page>	
+## 에러처리 코드 보러가기 
 
-
+* https://github.com/jueon-kim/PuppyDog/blob/06a0777e271095e24b376920df46e7bfb55bf136/WebContent/WEB-INF/err/error500.jsp
+* https://github.com/jueon-kim/PuppyDog/blob/b4bdbd99d75347514810ae87a6c3da48451a6880/WebContent/WEB-INF/err/error404.jsp
+* https://github.com/jueon-kim/PuppyDog/blob/06a0777e271095e24b376920df46e7bfb55bf136/WebContent/WEB-INF/err/errorNullPointerException.jsp
 
 # ERD
 <img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
