@@ -13,20 +13,20 @@
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
+
 # 유효성 검사
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
 ![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
 
-# 회원가입 화면 
-
-![회원가입화면](https://github.com/user-attachments/assets/28fbf127-84c8-4a7c-803b-a73fca641bd5)
+# 로그인화면  
+<img width="400" alt="로그인화면" src="https://github.com/user-attachments/assets/dcbb49b4-990d-484f-8026-76a176eaac58">
+#회원가입화면
+<img width="400" alt="회원가입화면" src="https://github.com/user-attachments/assets/162461c1-3a73-46e1-bd07-e779dcd40e63">
 
 # 로그인후
-
-![로그인후](https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad)
+<img width="400" alt="헤더" src="https://github.com/user-attachments/assets/416fbe85-e8cb-4c52-9802-cb77df2c9fc2">
 
 # 테스트 코드
-
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/src/pet/join/jdbcTest.java
 
 # Error
@@ -37,7 +37,7 @@
 ![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
 
 # ERD
-<img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
+<img width="200" alt="DB" src="https://github.com/user-attachments/assets/687bc52a-4320-4be5-a849-521506149ee0">
 
 
     
