@@ -22,8 +22,6 @@
 ![회원가입화면](https://github.com/user-attachments/assets/28fbf127-84c8-4a7c-803b-a73fca641bd5)
 
 # 로그인후
-<img src="https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad.png" width="200" height="400"/>
-
 
 ![로그인후](https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad)
 
