@@ -11,7 +11,7 @@
 * 기존 프로젝트 - [퍼피독_팀 공백.pptx](https://github.com/user-attachments/files/17588825/_.pptx)
 
 # 메인화면
-![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a){: width="100" height="50"}
+![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
 # 유효성 검사
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
