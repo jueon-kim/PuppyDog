@@ -16,7 +16,7 @@
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
-
+https://github.com/jueon-kim/PuppyDog/blob/b4bdbd99d75347514810ae87a6c3da48451a6880/WebContent/WEB-INF/err/error404.jsp
 # 유효성 검사
 ![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
 
