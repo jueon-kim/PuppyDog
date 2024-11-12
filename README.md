@@ -19,7 +19,7 @@
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
 |화면|이미지|코드|
-| :---: | :---: | :--: |
+| :---: | :---------------------------: | :--: |
 |로그인화면|<img width="400" alt="로그인화면" src="https://github.com/user-attachments/assets/dcbb49b4-990d-484f-8026-76a176eaac58">|https://github.com/jueon-kim/PuppyDog/blob/66cfa13847659fd722e7aaabbbd625a048a068ce/src/pet/join/LoginServlet.java|
 |회원가입|<img width="400" alt="회원가입화면" src="https://github.com/user-attachments/assets/162461c1-3a73-46e1-bd07-e779dcd40e63">|https://github.com/jueon-kim/PuppyDog/blob/66cfa13847659fd722e7aaabbbd625a048a068ce/src/pet/join/petJoin.java|
 |로그인완료|<img width="400" alt="헤더" src="https://github.com/user-attachments/assets/416fbe85-e8cb-4c52-9802-cb77df2c9fc2">|
