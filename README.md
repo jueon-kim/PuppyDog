@@ -10,23 +10,21 @@
 * 미완성된 팀프로젝트를 개인프로젝트로 변경하여 제작 하였습니다.
 * 기존 프로젝트 - [퍼피독_팀 공백.pptx](https://github.com/user-attachments/files/17588825/_.pptx)
 
-# 기능
-* 사용자 - 회원가입 및 로그인, 유효성 검사 및 중복 검사
-
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
-
 # 유효성 검사
-![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
-
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
+![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
 
 # 회원가입 화면 
 
 ![회원가입화면](https://github.com/user-attachments/assets/28fbf127-84c8-4a7c-803b-a73fca641bd5)
 
 # 로그인후
+<img src="https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad.png" width="200" height="400"/>
+
+
 ![로그인후](https://github.com/user-attachments/assets/222b64e5-29f5-4c0a-a6ff-db6a089200ad)
 
 # 테스트 코드
@@ -39,8 +37,6 @@
 * https://github.com/jueon-kim/PuppyDog/blob/06a0777e271095e24b376920df46e7bfb55bf136/WebContent/WEB-INF/err/errorNullPointerException.jsp
 
 ![에러화면](https://github.com/user-attachments/assets/6830d5cb-e34b-416b-a638-41f7d140ab0a)
-* web.xml에 지정된 메인페이로 안내하는 에러 페이지 설정입니다.
-
 
 # ERD
 <img width="203" alt="DB" src="https://github.com/user-attachments/assets/e56b815b-7f68-4726-a07f-34475a035007">
