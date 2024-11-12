@@ -13,7 +13,7 @@
 # 메인화면
 
 
-<img src="https://github.com/jueon-kim/PuppyDog/issues/1#issue-2651945770.png" widht="200" height="200">
+<img src = "https://github.com/jueon-kim/PuppyDog/issues/1#issue-2651945770" widht="200" height="200">
 
 
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
