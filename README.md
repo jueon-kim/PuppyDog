@@ -22,6 +22,12 @@
 | ERD | <img width="200" alt="DB" src="https://github.com/user-attachments/assets/687bc52a-4320-4be5-a849-521506149ee0"> |
 | 유효성 검사 | <img width="400" alt="유효성검사" src="https://github.com/user-attachments/assets/d075a6bc-2b7d-49ad-b129-7ffaa3ecdcfc"> |
 
+|제목|내용|설명|
+|------|---|---|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+|테스트1|테스트2|테스트3|
+
 
 # 유효성 검사
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
