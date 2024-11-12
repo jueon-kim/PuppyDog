@@ -13,11 +13,6 @@
 # 메인화면
 ![index](https://github.com/user-attachments/assets/0a38b787-6d07-4e12-a49b-589da986237a)
 
-
-# 유효성 검사
-* https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
-![유효성검사](https://github.com/user-attachments/assets/212868e5-fc9e-4861-bdd3-f930fa72e4a6)
-
 # 로그인화면  
 <img width="400" alt="로그인화면" src="https://github.com/user-attachments/assets/dcbb49b4-990d-484f-8026-76a176eaac58">
 #회원가입화면
@@ -25,6 +20,10 @@
 
 # 로그인후
 <img width="400" alt="헤더" src="https://github.com/user-attachments/assets/416fbe85-e8cb-4c52-9802-cb77df2c9fc2">
+
+# 유효성 검사
+* https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/WebContent/JoinPage.jsp
+<img width="400" alt="유효성검사" src="https://github.com/user-attachments/assets/d075a6bc-2b7d-49ad-b129-7ffaa3ecdcfc">
 
 # 테스트 코드
 * https://github.com/jueon-kim/PuppyDog/blob/d7513b4b30d5ec2514440b39028766abd00ff315/src/pet/join/jdbcTest.java
